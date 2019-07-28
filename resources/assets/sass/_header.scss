@@ -1,0 +1,40 @@
+.hnav {
+  width:100%;
+  background-color: #333333;
+  min-height: 60px; 
+  nav {
+    width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+    ul {
+      margin: 0;
+      padding: 0;
+      
+      li {
+        list-style-type: none;
+        margin:0 auto;
+        a {
+          text-decoration: none;
+          text-align: center;
+          transition: .6s;
+          color:#DABFBC;
+          font-family: 'Princess Sofia', cursive;
+          font-size: 40px;
+          margin-top: 10px;       
+        }
+        a:hover {
+          animation: 7s logocolor infinite;
+
+        }
+        
+      }
+    }
+  }
+}
+@keyframes logocolor {
+  0% {color: #DABFBC;}
+  25% {color:rgb(142, 204, 183);}
+  50% {color: rgb(111, 175, 218);}
+  75% {color: rgb(164, 139, 185);}
+  100% {color:#DABFBC;}
+}

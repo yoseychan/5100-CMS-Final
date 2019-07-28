@@ -1,0 +1,11 @@
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+@import "general";
+@import "header";
+@import "footer";
+@import "login";
+
+/* use this file to   import all others */
+
+body{
+    background-color: #F2ECEC;
+}

@@ -1,0 +1,63 @@
+footer {
+    background-color: rgba(115, 95, 92, 0.726) ;
+    .footer {
+        width: 1400px;
+        margin: 0 auto;
+        overflow: hidden;
+        .left {
+            width:30%;
+            float:left;
+            .logo {
+                margin: 20px 0;
+               font-size: 40px;
+               color: #333333;
+               font-family: 'Princess Sofia', cursive;
+            }    
+        }
+        .right {
+            float: right;
+            .ficon {
+                font-size:32px;
+                text-align: center;
+                .icon {
+                    padding: 2px 10px;
+                    text-decoration: none;
+                    color: #333333;
+                    transition: .6s;
+                }
+                .icon:hover {
+                   color: rgb(69, 85, 100);
+                }
+            }
+            .footnav {
+                font-size: 16px;
+                height: 60px;
+                a { 
+                    
+                    box-sizing: content-box;
+                    color: #333333;
+                    text-decoration: none;
+                    font-family: 'Stylish', sans-serif;
+                    transition: .6s;
+                }
+                a::after {
+                    content: " | "
+                }
+                a:last-of-type::after {
+                    content: " ";
+                }
+                a:hover {
+                    color: rgb(69, 85, 100);
+                }
+            }
+        }
+    }
+    .logotext {
+        font-size: 16px;
+        text-align: center;
+        width: 100%;
+        font-family: 'Stylish', sans-serif;
+        height: 30px;
+        margin:0;
+    }
+}
