@@ -1,32 +1,28 @@
 <?php
 $router->get('', 'PagesController@home');
-$router->get('about', 'PagesController@about');
-$router->get('about/culture', 'PagesController@aboutCulture');
-$router->get('contact', 'PagesController@contact');
-
 $router->get('api/tasks', 'TasksController@apiGet');
-
-//$router->post('contact/submit', 'controllers/contact-submit.php');
 
 $router->post('tasks/submit', 'TasksController@store');
 
+
+//USER ROUTES
+$router->get('user', 'PagesController@user');
+//POSTS
+$router->get('user/posts', 'UserPostsController@index');
+//PROFILE
+$router->get('user/profile', 'UserProfileController@index');
+
+
+
+//ADMIN ROUTES
+$router->get('admin', 'PagesController@admin');
+//USERS
+$router->get('admin/users', 'AdminUsersController@index');
+//$router->get('admin/users', 'AdminUsersController@delete');
+//POSTS
+$router->get('admin/posts', 'AdminPostsController@index');
+//$router->get('admin/posts', 'AdminPostsController@delete');
+//Tasks
 $router->get('admin/tasks', 'AdminTasksController@index');
-$router->get('admin/tasks/delete', 'AdminTasksController@delete');
-
-
-/*
- * API ROUTES
- */
-$router->get('api/something', 'ApiController@getSomething');
-
-$router->get('api/pets', 'ApiPetsController@index');
-$router->post('api/pets/find', 'ApiPetsController@find');
-$router->post('api/pets', 'ApiPetsController@store');
-$router->post('api/pets/update', 'ApiPetsController@update');
-$router->post('api/pets/delete', 'ApiPetsController@delete');
-
-
-
-
-
+//$router->get('admin/tasks/delete', 'AdminTasksController@delete');
 

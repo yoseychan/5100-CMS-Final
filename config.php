@@ -4,7 +4,7 @@ return [
     "database" => [
         "driver" => "mysql",
         "host" => "localhost",
-        "dbname" => "tasks2019",
+        "dbname" => "petstagramdb",
         "user" => "root",
         "password" => "",
         "options" => [

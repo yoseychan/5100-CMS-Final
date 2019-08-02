@@ -1,5 +1,8 @@
 <?php require "partials/header.php" ?>
-    <h1>About our culture</h1>
+<?php require "partials/usernav.php" ?>
 
-    <test2></test2>
+<h1>this is user</h1>
+
+
+
 <?php require "partials/footer.php" ?>

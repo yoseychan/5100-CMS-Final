@@ -7,11 +7,13 @@ namespace Composer\Autoload;
 class ComposerStaticInitcbd8f22b4e36d74f0c7e26ea911bb6fb
 {
     public static $classMap = array (
+        'Cms\\Controllers\\AdminPostsController' => __DIR__ . '/../..' . '/controllers/AdminPostsController.php',
         'Cms\\Controllers\\AdminTasksController' => __DIR__ . '/../..' . '/controllers/AdminTasksController.php',
-        'Cms\\Controllers\\ApiController' => __DIR__ . '/../..' . '/controllers/ApiController.php',
-        'Cms\\Controllers\\ApiPetsController' => __DIR__ . '/../..' . '/controllers/ApiPetsController.php',
+        'Cms\\Controllers\\AdminUsersController' => __DIR__ . '/../..' . '/controllers/AdminUsersController.php',
         'Cms\\Controllers\\PagesController' => __DIR__ . '/../..' . '/controllers/PagesController.php',
         'Cms\\Controllers\\TasksController' => __DIR__ . '/../..' . '/controllers/TasksController.php',
+        'Cms\\Controllers\\UserPostsController' => __DIR__ . '/../..' . '/controllers/UserPostsController.php',
+        'Cms\\Controllers\\UserProfileController' => __DIR__ . '/../..' . '/controllers/UserProfileController.php',
         'Cms\\Core\\App' => __DIR__ . '/../..' . '/core/App.php',
         'Cms\\Core\\Database\\Connection' => __DIR__ . '/../..' . '/core/database/Connection.php',
         'Cms\\Core\\Database\\QueryBuilder' => __DIR__ . '/../..' . '/core/database/QueryBuilder.php',

@@ -6,11 +6,13 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Cms\\Controllers\\AdminPostsController' => $baseDir . '/controllers/AdminPostsController.php',
     'Cms\\Controllers\\AdminTasksController' => $baseDir . '/controllers/AdminTasksController.php',
-    'Cms\\Controllers\\ApiController' => $baseDir . '/controllers/ApiController.php',
-    'Cms\\Controllers\\ApiPetsController' => $baseDir . '/controllers/ApiPetsController.php',
+    'Cms\\Controllers\\AdminUsersController' => $baseDir . '/controllers/AdminUsersController.php',
     'Cms\\Controllers\\PagesController' => $baseDir . '/controllers/PagesController.php',
     'Cms\\Controllers\\TasksController' => $baseDir . '/controllers/TasksController.php',
+    'Cms\\Controllers\\UserPostsController' => $baseDir . '/controllers/UserPostsController.php',
+    'Cms\\Controllers\\UserProfileController' => $baseDir . '/controllers/UserProfileController.php',
     'Cms\\Core\\App' => $baseDir . '/core/App.php',
     'Cms\\Core\\Database\\Connection' => $baseDir . '/core/database/Connection.php',
     'Cms\\Core\\Database\\QueryBuilder' => $baseDir . '/core/database/QueryBuilder.php',
