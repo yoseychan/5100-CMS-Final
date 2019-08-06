@@ -24,6 +24,7 @@ class AdminPostsController {
         echo json_encode([
             'result' => 'success'
         ]);
+        return redirect('/admin/posts');
     }
 
     public function update()
@@ -32,12 +33,19 @@ class AdminPostsController {
         echo json_encode([
             'result' => 'success'
         ]);
+        return redirect('/admin/posts');
+    }
+
+    public function edit()
+    {
+        $post =  App::get('db')->fetchOne("posts", $_GET)[0];
+        return view('admin-posts-edit', compact('post'));
     }
 
     public function delete()
     {
         App::get('db')->delete("posts", $_GET);
-        return redirect('/admin/users');
+        return redirect('/admin/posts');
     }
 }
 

@@ -5,25 +5,35 @@
     
     <h1>All users</h1>
     <div class="adminUserList">
-        <a class="newuser" href="/users/insert">+ New User</a>
-        <div class="users">
-            
-            <h3>ID</h3>
-            <h3></h3>
-            <h3>Avatar</h3>
-            <h3>Username</h3>
-            <h3>Actions</h3>
-        </div>
-        <?php foreach ($users as $user): ?>
-        <div class="users">
-            <p><?= $user->id?><p>
-                <p></p>
-            <p><?= $user->avatar?> avatar</p>
-            <p><?= $user->username?></p>
-            <p>Edit | <a href="/admin/users/delete?id=<?= $user->id ?>">Delete</a></p>
-        </div>
-        <?php endforeach; ?>
-
+        <a class="newuser" href="/admin/users/newuser">+ New User</a>
+        <table class="table table-hover admintable ">
+            <thead class="tablecolor">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">First name</th>
+                    <th scope="col">Last name</th>
+                    <th scope="col">Username</th>
+                    <th scope="col">E-mail</th>
+                    <th scope="col">Password</th>
+                    <th scope="col">Avatar</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($users as $user): ?>
+                <tr>
+                    <td><?= $user->id?></td>
+                    <td><?= $user->firstName?></td>
+                    <td><?= $user->lastName?></td>
+                    <td><?= $user->username?></td>
+                    <td><?= $user->email?></td>
+                    <td><?= $user->password?></td>
+                    <td><?= $user->avatar?> avatar</td>
+                    <td><a href="/admin/users/edit?id=<?= $user->id ?>">Edit</a> | <a href="/admin/users/delete?id=<?= $user->id ?>">Delete</a></td>
+                </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
     </div>
 
 </section>

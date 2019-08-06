@@ -5,13 +5,14 @@ use Cms\Core\App;
 
 class PagesController {
 
-    // public function home()
-    // {
-    //     $tasks = App::get('db')->fetchAll("tasks");
+     public function home()
+     {
+         $posts = App::get('db')->fetchAll("posts");
 
-    //     return view('index', compact('tasks'));
-    // }
- //User Page
+         return view('index', compact('posts'));
+     }
+
+     //User Page
 
     public function user()
     {
@@ -21,8 +22,19 @@ class PagesController {
 //Admin Page
     public function admin()
     {
-        return view('admin');
+        $posts = App::get('db')->fetchAll("posts");
+
+        return view('admin', compact('posts'));
+
     }
 
+    //Admin new user
+
+    public function newuser()
+    {
+
+        return view('admin-users-newuser');
+
+    }
 
 }

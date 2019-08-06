@@ -24,6 +24,7 @@ class AdminUsersController {
         echo json_encode([
             'result' => 'success'
         ]);
+        return redirect('/admin/users');
     }
 
     public function update()
@@ -32,6 +33,13 @@ class AdminUsersController {
         echo json_encode([
             'result' => 'success'
         ]);
+        return redirect('/admin/users');
+    }
+
+    public function edit()
+    {
+        $user =  App::get('db')->fetchOne("users", $_GET)[0];
+        return view('admin-users-edit', compact('user'));
     }
 
     public function delete()
