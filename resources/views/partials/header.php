@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Princess+Sofia|Stylish&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/11a1857992.js"></script>
     <link rel="stylesheet" href="/css/app.css">
 
 </head>

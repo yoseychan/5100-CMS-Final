@@ -1,7 +1,7 @@
 <?php require "partials/header.php" ?>
 <?php require "partials/adminnav.php" ?>
 
-<section class="admin">
+<section class="container">
 <h2>Edit a post</h2>
 
     <form action="/admin/posts/update" method="POST" class="adminform">
@@ -11,10 +11,7 @@
         <input type="text" name="image" value="<?= $post->image?>">
 
         <label for="description">Description</label>
-        <input type="text" name="description" value="<?= $post->description?>">
-
-        <label for="users_id">Users ID</label>
-        <input type="text" name="users_id" value="<?= $post->users_id?>">
+        <textarea type="text" name="description" value="<?= $post->description?>"> </textarea>
 
         <button type="submit">Save changes</button>
 

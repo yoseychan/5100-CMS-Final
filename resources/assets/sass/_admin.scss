@@ -1,21 +1,15 @@
-//Admin container on all pages 
-.admin {
-    width: 1400px;
-    min-height: 900px;
-    margin: 0 auto;
-    h1, h2 {
-        margin: 20px 0;
-        color:#333;
-        text-align: center;
-        font-family: 'Stylish', sans-serif;
 
-    }    
-    h2 {
-        margin: 20px 0;
-    }
-//Admin users and posts pages    
+h1, h2 {
+    margin: 20px 0;
+    color:#333;
+    text-align: center;
+
+}
+h2 {
+    margin: 20px 0;
+}
+//Admin users and posts pages
     .adminUserList {
-        margin: 0 20px;
         text-align: center;
         .newuser {
             padding: 10px 30px;
@@ -24,8 +18,6 @@
             display: inline-block;
             text-decoration: none;
             color: #DABFBC;
-            font-size: 20px;
-            font-family: 'Stylish', sans-serif;
             transition: .6s;
         }
         .newuser:hover {
@@ -37,9 +29,31 @@
         }
         .admintable {
             text-align: left;
+            th {
+                font-size: 24px;
+            }
+            td {
+                font-family: 'Stylish', sans-serif;
+                font-size: 18px;
+            }
             th:last-of-type,
             td:last-of-type{
                 text-align: right;
+            }
+            td{
+                a {
+                    text-decoration: none;
+                    color: #735f5c;
+                    transition: .6s;
+                    font-size: 24px;
+                    margin: 5px;
+                }
+                a:hover {
+                    color: #333;
+                    text-decoration: underline;
+
+
+                }
             }
             th:first-of-type,
             td:first-of-type{
@@ -47,26 +61,13 @@
                 text-align: center;
             }
             img {
-
                 height: 100px;
                 width: auto;      
             }
         }
     }
-//all posts on Admin home page    
-    .post {
-        text-align: center;
-        margin: 0 auto 100px;
-        border-bottom: 1px solid rgba(51, 51, 51, 0.94);
 
-        .image {
-
-            img {
-                max-width: 900px;
-            }
-        }
-    }
-//ADMIN edit forms, new user form    
+//ADMIN edit forms, new user form
     .adminform {
         width: 500px;
         height: 650px;
@@ -79,7 +80,7 @@
             text-align: center;
             font-size: 22px;
         }
-        input, button{
+        input, button, textarea{
             border: none;
             background-color: rgba(115, 95, 92, 0.336) ;
             color: #1E1D29;
@@ -90,18 +91,19 @@
             width: 300px; 
             font-size: 18px; 
         }
+        textarea {
+            min-height: 300px;
+            max-height: 300px;
+        }
         button {
             margin: 50px auto;
             background-color: rgba(51, 51, 51, 0.726);
             color:rgb(218, 199, 197);
             transition: .6s;
             text-transform: uppercase;
-            
-
         }
         button:hover {
             background-color: #333;
             color:rgb(252, 232, 230);
         }
     }
-}

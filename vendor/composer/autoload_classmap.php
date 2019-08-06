@@ -7,10 +7,8 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Cms\\Controllers\\AdminPostsController' => $baseDir . '/controllers/AdminPostsController.php',
-    'Cms\\Controllers\\AdminTasksController' => $baseDir . '/controllers/AdminTasksController.php',
     'Cms\\Controllers\\AdminUsersController' => $baseDir . '/controllers/AdminUsersController.php',
     'Cms\\Controllers\\PagesController' => $baseDir . '/controllers/PagesController.php',
-    'Cms\\Controllers\\TasksController' => $baseDir . '/controllers/TasksController.php',
     'Cms\\Controllers\\UserPostsController' => $baseDir . '/controllers/UserPostsController.php',
     'Cms\\Controllers\\UserProfileController' => $baseDir . '/controllers/UserProfileController.php',
     'Cms\\Core\\App' => $baseDir . '/core/App.php',

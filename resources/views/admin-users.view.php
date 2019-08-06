@@ -1,7 +1,7 @@
 <?php require "partials/header.php" ?>
 <?php require "partials/adminnav.php" ?>
 
-<section class="admin">
+<section class="container">
     
     <h1>All users</h1>
     <div class="adminUserList">
@@ -28,8 +28,11 @@
                     <td><?= $user->username?></td>
                     <td><?= $user->email?></td>
                     <td><?= $user->password?></td>
-                    <td><?= $user->avatar?> avatar</td>
-                    <td><a href="/admin/users/edit?id=<?= $user->id ?>">Edit</a> | <a href="/admin/users/delete?id=<?= $user->id ?>">Delete</a></td>
+                    <td><?= $user->avatar?></td>
+                    <td>
+                        <a href="/admin/users/edit?id=<?= $user->id ?>"><i class="far fa-edit"></i></a>
+                        <a href="/admin/users/delete?id=<?= $user->id ?>"><i class="fas fa-trash-alt"></i></a>
+                    </td>
                 </tr>
                 <?php endforeach; ?>
             </tbody>

@@ -10644,6 +10644,71 @@ a.text-dark:focus {
   }
 }
 
+.container {
+  width: 1400px;
+  margin: 0 auto;
+  min-height: 800px;
+  font-family: "Stylish", sans-serif;
+  font-size: 20px;
+}
+
+.post {
+  width: 900px;
+  text-align: center;
+  margin: 0 auto 30px;
+}
+
+.post .user {
+  height: 84px;
+  text-align: left;
+}
+
+.post .user .avatar {
+  background-image: url(/images/pawprint.png?f6b48447ee2e5a5131d9a20df7ed2c16);
+  background-size: contain;
+  background-position: center;
+  height: 64px;
+  width: 64px;
+  display: inline-block;
+}
+
+.post .user .username {
+  font-family: "Stylish", sans-serif;
+  font-size: 24px;
+  color: #333;
+  display: inline-block;
+  padding: 20px;
+}
+
+.post .user .username a {
+  text-decoration: none;
+  color: #333;
+}
+
+.post .user .username a:hover {
+  color: rgba(51, 51, 51, 0.77);
+}
+
+.post .user .username span {
+  font-size: 18px;
+}
+
+.post .image {
+  background-color: rgba(115, 95, 92, 0.081);
+}
+
+.post .image img {
+  max-width: 800px;
+  max-height: 600px;
+  border: 3px solid rgba(51, 51, 51, 0.77);
+}
+
+.post .ornament {
+  height: 100px;
+  width: 900px;
+  background-image: url(/images/ornament.jpg?2a03fda2121a219ebcbc1c6adf7f89d6);
+}
+
 .hnav {
   width: 100%;
   background-color: #333333;
@@ -10941,81 +11006,83 @@ footer .logotext {
   opacity: 0;
 }
 
-.admin {
-  width: 1400px;
-  min-height: 900px;
-  margin: 0 auto;
-}
-
-.admin h1,
-.admin h2 {
+h1,
+h2 {
   margin: 20px 0;
   color: #333;
   text-align: center;
-  font-family: "Stylish", sans-serif;
 }
 
-.admin h2 {
+h2 {
   margin: 20px 0;
 }
 
-.admin .adminUserList {
-  margin: 0 20px;
+.adminUserList {
   text-align: center;
 }
 
-.admin .adminUserList .newuser {
+.adminUserList .newuser {
   padding: 10px 30px;
   background-color: rgba(115, 95, 92, 0.781);
   margin: 40px 0;
   display: inline-block;
   text-decoration: none;
   color: #DABFBC;
-  font-size: 20px;
-  font-family: "Stylish", sans-serif;
   transition: 0.6s;
 }
 
-.admin .adminUserList .newuser:hover {
+.adminUserList .newuser:hover {
   background-color: rgba(115, 95, 92, 0.981);
 }
 
-.admin .adminUserList .tablecolor {
+.adminUserList .tablecolor {
   background-color: #333;
   color: #DABFBC;
 }
 
-.admin .adminUserList .admintable {
+.adminUserList .admintable {
   text-align: left;
 }
 
-.admin .adminUserList .admintable th:last-of-type,
-.admin .adminUserList .admintable td:last-of-type {
+.adminUserList .admintable th {
+  font-size: 24px;
+}
+
+.adminUserList .admintable td {
+  font-family: "Stylish", sans-serif;
+  font-size: 18px;
+}
+
+.adminUserList .admintable th:last-of-type,
+.adminUserList .admintable td:last-of-type {
   text-align: right;
 }
 
-.admin .adminUserList .admintable th:first-of-type,
-.admin .adminUserList .admintable td:first-of-type {
+.adminUserList .admintable td a {
+  text-decoration: none;
+  color: #735f5c;
+  transition: 0.6s;
+  font-size: 24px;
+  margin: 5px;
+}
+
+.adminUserList .admintable td a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+.adminUserList .admintable th:first-of-type,
+.adminUserList .admintable td:first-of-type {
   font-weight: 700;
   text-align: center;
 }
 
-.admin .adminUserList .admintable img {
+.adminUserList .admintable img {
   height: 100px;
   width: auto;
 }
 
-.admin .post {
-  text-align: center;
-  margin: 0 auto 100px;
-  border-bottom: 1px solid rgba(51, 51, 51, 0.94);
-}
-
-.admin .post .image img {
-  max-width: 900px;
-}
-
-.admin .adminform {
+.adminform {
   width: 500px;
   height: 650px;
   background-color: rgba(115, 95, 92, 0.26);
@@ -11023,15 +11090,16 @@ footer .logotext {
   font-family: "Stylish", sans-serif;
 }
 
-.admin .adminform label {
+.adminform label {
   margin: 15px 0 0;
   display: block;
   text-align: center;
   font-size: 22px;
 }
 
-.admin .adminform input,
-.admin .adminform button {
+.adminform input,
+.adminform button,
+.adminform textarea {
   border: none;
   background-color: rgba(115, 95, 92, 0.336);
   color: #1E1D29;
@@ -11043,7 +11111,12 @@ footer .logotext {
   font-size: 18px;
 }
 
-.admin .adminform button {
+.adminform textarea {
+  min-height: 300px;
+  max-height: 300px;
+}
+
+.adminform button {
   margin: 50px auto;
   background-color: rgba(51, 51, 51, 0.726);
   color: #dac7c5;
@@ -11051,7 +11124,7 @@ footer .logotext {
   text-transform: uppercase;
 }
 
-.admin .adminform button:hover {
+.adminform button:hover {
   background-color: #333;
   color: #fce8e6;
 }

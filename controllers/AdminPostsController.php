@@ -7,7 +7,8 @@ class AdminPostsController {
     public function index()
     {
         $posts =  App::get('db')->fetchAll("posts");
-        return view('admin-posts', compact('posts'));
+        $users =  App::get('db')->fetchAll("users");
+        return view('admin-posts', compact('posts', 'users'));
     }
 
     public function find()

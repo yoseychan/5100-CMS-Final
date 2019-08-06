@@ -1,7 +1,7 @@
 <?php require "partials/header.php" ?>
 <?php require "partials/adminnav.php" ?>
 
-<section class="admin">
+<section class="container">
 
 <h2>Edit a user</h2>
 
