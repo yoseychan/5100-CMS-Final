@@ -10652,6 +10652,24 @@ a.text-dark:focus {
   font-size: 20px;
 }
 
+.makenew {
+  text-align: center;
+}
+
+.makenew .newpost {
+  padding: 10px 30px;
+  background-color: rgba(115, 95, 92, 0.781);
+  margin: 40px auto;
+  display: inline-block;
+  text-decoration: none;
+  color: #DABFBC;
+  transition: 0.6s;
+}
+
+.makenew .newpost:hover {
+  background-color: #333;
+}
+
 .post {
   width: 900px;
   text-align: center;
@@ -10660,10 +10678,22 @@ a.text-dark:focus {
 
 .post .user {
   height: 84px;
-  text-align: left;
+  text-align: center;
+}
+
+.post .user .remove {
+  text-align: right;
+  text-decoration: none;
+  color: #333;
+  transition: 0.6s;
+}
+
+.post .user .remove:hover {
+  color: rgba(51, 51, 51, 0.76);
 }
 
 .post .user .avatar {
+  text-align: left;
   background-image: url(/images/pawprint.png?f6b48447ee2e5a5131d9a20df7ed2c16);
   background-size: contain;
   background-position: center;
@@ -10691,10 +10721,6 @@ a.text-dark:focus {
 
 .post .user .username span {
   font-size: 18px;
-}
-
-.post .image {
-  background-color: rgba(115, 95, 92, 0.081);
 }
 
 .post .image img {

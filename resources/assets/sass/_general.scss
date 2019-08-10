@@ -6,7 +6,21 @@
   font-family: "Stylish", sans-serif;
   font-size: 20px;
 }
-
+.makenew {
+  text-align: center;
+  .newpost {
+    padding: 10px 30px;
+    background-color: rgba(115, 95, 92, 0.781);
+    margin: 40px auto;
+    display: inline-block;
+    text-decoration: none;
+    color: #DABFBC;
+    transition: .6s;
+  }
+  .newpost:hover {
+    background-color: #333;
+  }
+}
 //All posts
 .post {
   width: 900px;
@@ -14,8 +28,19 @@
   margin: 0 auto 30px;
   .user {
     height:84px;
-    text-align: left;
+    text-align: center;
+
+    .remove {
+      text-align: right;
+      text-decoration: none;
+      color:#333;
+      transition: .6s;
+    }
+    .remove:hover {
+      color: rgba(51, 51, 51, 0.76);
+    }
     .avatar {
+      text-align: left;
       background-image: url("../../../public/images/pawprint.png");
       background-size: contain;
       background-position: center;
@@ -42,7 +67,6 @@
     }
   }
   .image {
-    background-color: rgba(115, 95, 92, 0.081);
     img {
       max-width: 800px;
       max-height:600px;

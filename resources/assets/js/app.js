@@ -4,8 +4,6 @@ import axios from 'axios';
 
 window.axios = axios;
 
-Vue.component('test2', require('./components/Test2').default);
-Vue.component('login', require('./components/Login').default);
 
 
 

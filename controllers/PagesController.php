@@ -26,6 +26,15 @@ class PagesController {
         return view('admin', compact('posts','users'));
 
     }
+    //authentication
+
+    public function authenticate ()
+    {
+
+         $user = App::get('db')->authenticate('users', $_POST) ;
+         $_SESSION['user'] = $user;
+         return redirect('/user');
+    }
 
     //Admin page for adding a new user
 
@@ -35,6 +44,8 @@ class PagesController {
         return view('admin-users-newuser');
 
     }
+
+    //creating new posts
     public function newpost()
     {
         $user =  App::get('db')->fetchOne("users", $_GET)[0];

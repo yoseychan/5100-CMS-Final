@@ -77,4 +77,18 @@ class QueryBuilder {
         $sql = $this->pdo->prepare($query);
         $sql->execute($parameters);
     }
+    public function authenticate ($table, $parameters) {
+        $params = "";
+        foreach ($parameters as $key => $parameter) {
+            $params .= $key . "=:" . $key . " AND ";
+        }
+        $query = sprintf(
+            $table = " SELECT * FROM %s WHERE %s ",
+            $table,
+            trim ($params, " AND ")
+        );
+        $sql = $this->pdo->prepare($query);
+        $sql = execute($parameters);
+        return $sql->fetchAll(\PDO::FETCH_OBJ);
+    }
 }
